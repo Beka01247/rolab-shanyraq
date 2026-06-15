@@ -94,6 +94,9 @@ const SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzWh-srv9jl_U
     if (btn) { btn.disabled = true; btn.innerHTML = 'Отправляем…'; }
 
     function showSuccess() {
+      // Meta Pixel: событие "Lead" при успешной отправке формы
+      if (typeof fbq === 'function') fbq('track', 'Lead');
+
       form.reset();
       const ageSel = document.querySelector('select[name="age"]');
       if (ageSel) ageSel.selectedIndex = 0;
