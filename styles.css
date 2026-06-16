@@ -336,7 +336,9 @@ ul{list-style:none}
   .speaker-card{flex-direction:column;gap:14px}
   .program-card{padding:18px 18px}
   .program-time{margin-left:0}
-  .parent-banner{flex-direction:column;text-align:center;padding:18px}
+  .parent-banner{align-items:flex-start;padding:18px;gap:12px}
+  .parent-banner-ico{font-size:24px}
+  .parent-banner-text{font-size:14px;text-align:left}
   .speaker-photo{width:60px;height:60px;flex-basis:60px;font-size:18px}
   .card{padding:22px}
   .field-row{grid-template-columns:1fr}
