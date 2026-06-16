@@ -9,21 +9,28 @@
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
         };
         if (!f._fbq) f._fbq = n;
         n.push = n;
         n.loaded = !0;
-        n.version = '2.0';
+        n.version = "2.0";
         n.queue = [];
         t = b.createElement(e);
         t.async = !0;
         t.src = v;
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '3832517337043584');
-      fbq('track', 'PageView');
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "3832517337043584");
+      fbq("track", "PageView");
     </script>
     <noscript
       ><img
@@ -178,12 +185,14 @@
             <div class="program-body">
               <div class="program-head">
                 <span class="program-ico">🤖</span>
-                <h3 class="program-title">Робототехника: Sphero Bolt и дроны</h3>
+                <h3 class="program-title">
+                  Робототехника: Sphero Bolt и дроны
+                </h3>
                 <span class="program-time">30 минут</span>
               </div>
               <p class="program-text">
-                Запрограммирует шар Sphero Bolt через приложение и проведёт
-                его через лабиринт. Попробует пилотировать настоящий дрон под
+                Запрограммирует шар Sphero Bolt через приложение и проведёт его
+                через лабиринт. Попробует пилотировать настоящий дрон под
                 присмотром наставника.
               </p>
             </div>
@@ -205,6 +214,15 @@
             </div>
           </article>
         </div>
+
+        <div class="parent-banner">
+          <span class="parent-banner-ico">🎓</span>
+          <p class="parent-banner-text">
+            Пока ваш ребёнок будет изучать робототехнику и IT, ведущие
+            проведут для вас мастер-класс
+            <strong>«Профессия будущего»</strong>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -218,30 +236,6 @@
 
         <div class="speaker-list">
           <!-- 1 -->
-          <article class="speaker-card">
-            <div class="speaker-photo">
-              <img
-                src="img/nazym.png"
-                alt="Назым Арыстанбеккызы"
-                loading="lazy"
-              />
-            </div>
-            <div class="speaker-body">
-              <h3 class="speaker-name">Назым Арыстанбеккызы</h3>
-              <p class="speaker-role">Генеральный директор Rolab</p>
-              <ul class="speaker-points">
-                <li>🏆 Тренер по робототехнике</li>
-                <li>🏆 Судья национальных и международных соревнований</li>
-                <li>🚀 Предприниматель с 6-летним опытом</li>
-              </ul>
-              <blockquote class="speaker-quote">
-                «Я строю систему, в которой каждый ребёнок Казахстана получит
-                доступ к тому, что есть только в топовых школах.»
-              </blockquote>
-            </div>
-          </article>
-
-          <!-- 2 -->
           <article class="speaker-card">
             <div class="speaker-photo">
               <img
@@ -273,6 +267,30 @@
               <div class="speaker-badge">
                 Лично проведёт профориентацию для первых 20 семей в Астане
               </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="speaker-card">
+            <div class="speaker-photo">
+              <img
+                src="img/nazym.png"
+                alt="Назым Арыстанбеккызы"
+                loading="lazy"
+              />
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Назым Арыстанбеккызы</h3>
+              <p class="speaker-role">Генеральный директор Rolab</p>
+              <ul class="speaker-points">
+                <li>🏆 Тренер по робототехнике</li>
+                <li>🏆 Судья национальных и международных соревнований</li>
+                <li>🚀 Предприниматель с 6-летним опытом</li>
+              </ul>
+              <blockquote class="speaker-quote">
+                «Я строю систему, в которой каждый ребёнок Казахстана получит
+                доступ к тому, что есть только в топовых школах.»
+              </blockquote>
             </div>
           </article>
 
@@ -336,7 +354,9 @@
         <h2 class="section-title">
           Забронируйте <span class="accent">место для ребёнка</span>
         </h2>
-        <p class="section-sub">Осталось всего 12 мест из 25 — не теряйте время</p>
+        <p class="section-sub">
+          Осталось всего 12 мест из 25 — не теряйте время
+        </p>
       </div>
       <div class="container offer-grid">
         <!-- LEFT: form -->
