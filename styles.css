@@ -153,6 +153,31 @@ ul{list-style:none}
 }
 .section-sub{text-align:center;color:var(--muted);font-weight:600;margin:8px 0 36px}
 
+/* ===== PROGRAM ===== */
+.program{padding:64px 0}
+.program-list{display:grid;gap:16px;margin-top:36px}
+.program-card{
+  display:flex;align-items:flex-start;gap:18px;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 26px;box-shadow:var(--shadow-sm);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.program-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.program-num{
+  flex:0 0 auto;font-size:26px;font-weight:800;color:var(--sky-soft);
+  background:var(--grad-blue);-webkit-background-clip:text;background-clip:text;color:transparent;
+  line-height:1;min-width:44px;
+}
+.program-body{min-width:0;flex:1}
+.program-head{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.program-ico{font-size:20px;line-height:1}
+.program-title{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.program-time{
+  margin-left:auto;font-size:12px;font-weight:700;color:var(--blue);
+  background:rgba(31,107,255,.1);border-radius:8px;padding:4px 10px;white-space:nowrap;
+}
+.program-text{font-size:14.5px;color:var(--ink-soft);font-weight:500;line-height:1.5}
+
 /* ===== SPEAKERS ===== */
 .speakers{padding:64px 0}
 .speaker-list{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -185,6 +210,7 @@ ul{list-style:none}
 
 /* ===== OFFER (included + form) ===== */
 .offer{padding:24px 0 72px}
+.offer .section-sub{margin-bottom:30px}
 .offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
 .card{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
@@ -297,6 +323,8 @@ ul{list-style:none}
   .stat{padding:13px 8px}
   .stat-num{font-size:23px}
   .speaker-card{flex-direction:column;gap:14px}
+  .program-card{padding:18px 18px}
+  .program-time{margin-left:0}
   .speaker-photo{width:60px;height:60px;flex-basis:60px;font-size:18px}
   .card{padding:22px}
   .field-row{grid-template-columns:1fr}
